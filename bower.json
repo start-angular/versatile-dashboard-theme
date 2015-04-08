@@ -1,0 +1,20 @@
+{
+  "name": "yapp",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.3.0",
+    "json3": "^3.3.0",
+    "es5-shim": "^4.0.0",
+    "bootstrap": "^3.2.0",
+    "angular-mocks": "~1.3.14",
+    "ui-router": "~0.2.13",
+    "bootstrap-btn-outline-rounded": "~0.0.3",
+    "angular-animate": "~1.3.15"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3.0"
+  },
+  "resolutions": {
+    "angular": "1.3.14"
+  }
+}

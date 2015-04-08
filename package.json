@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "devDependencies": {
+    "apache-server-configs": "^2.11.0",
+    "chai": "^2.1.0",
+    "connect": "^3.3.4",
+    "connect-livereload": "^0.5.3",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-cache": "^0.2.8",
+    "gulp-csso": "^1.0.0",
+    "gulp-filter": "^2.0.2",
+    "gulp-flatten": "^0.0.4",
+    "gulp-if": "^1.2.5",
+    "gulp-inject": "^1.2.0",
+    "gulp-jscs": "^1.4.0",
+    "gulp-jshint": "^1.9.2",
+    "gulp-less": "^3.0.1",
+    "gulp-livereload": "^3.8.0",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-minify-html": "^1.0.0",
+    "gulp-ng-annotate": "^0.5.2",
+    "gulp-ngdocs": "^0.2.10",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace": "^0.5.3",
+    "gulp-size": "^1.2.1",
+    "gulp-uglify": "^1.1.0",
+    "gulp-useref": "^1.1.1",
+    "jshint-stylish": "^1.0.1",
+    "karma": "^0.12.31",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "lazypipe": "^0.2.2",
+    "main-bower-files": "^2.5.0",
+    "mocha": "^2.1.0",
+    "mock-gulp-dest": "^0.1.1",
+    "opn": "^1.0.1",
+    "serve-index": "^1.6.2",
+    "serve-static": "^1.9.1",
+    "wiredep": "^2.2.2",
+    "yargs": "^3.3.1"
+  },
+  "dependencies": {}
+}
