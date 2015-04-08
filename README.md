@@ -9,7 +9,7 @@ Find out more [Free Angular Themes at StartAngular.com](http://www.startangular.
 
 ## Installation
 1. Clone this project or Download that ZIP file
-2. Make sure you have [bower](http://bower.io/), [grunt-cli](https://www.npmjs.com/package/grunt-cli) and  [npm](https://www.npmjs.org/) installed globally
+2. Make sure you have [bower](http://bower.io/), [gulp](https://www.npmjs.com/package/gulp) and  [npm](https://www.npmjs.org/) installed globally
 3. On the command prompt run the following commands
 - cd `project-directory`
 - `bower install`
@@ -20,4 +20,4 @@ Find out more [Free Angular Themes at StartAngular.com](http://www.startangular.
 
 ### Automation tools
 
-- [Gulp](http://gruntjs.com/)
+- [Gulp](http://gulpjs.com/)
