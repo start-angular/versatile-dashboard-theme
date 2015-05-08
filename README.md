@@ -1,8 +1,8 @@
-## Ani Theme - Free AngularJS Dashboard Starter Theme
+## Versatile Dashboard - Free AngularJS Dashboard Starter Theme
 
-## [Demo](http://rawgit.com/start-angular/ani-theme/master/dist/index.html)
+## [Demo](http://rawgit.com/start-angular/versatile-dashboard-theme/master/dist/index.html)
 
-Ani Theme is a Boilerplate for Animated AngularJS Starter Theme written with Bootstrap LESS. Powered by Gulp.
+Versatile Admin Theme is a Boilerplate for Animated AngularJS Starter Theme written with Bootstrap LESS. Powered by Gulp.
 ![Preview](/examples/preview.png)
 
 Find out more [Free Angular Themes at StartAngular.com](http://www.startangular.com/).
