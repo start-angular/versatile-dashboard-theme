@@ -15,10 +15,12 @@
 	padding: 3em;
 
 	h1 {
-		font-weight: 300;
-		small {
-			color: rgba(255,255,255,0.7);
-		}
+		font-weight: 600;
+		
+			span {
+				font-size: 31px;
+			}
+	
 	}
 
 	.form-group {
@@ -28,5 +30,70 @@
 	.form-content {
 		padding: 40px 0;
 	}
+	.user-avatar {
+		width: 230px;
+		border: 3px solid white;
+	}
+	.form-container {
+		display: table;
+		width: 100%;
+		margin-top: 18%;
+		.img-container {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.form-content {
+			display: table-cell;
+			vertical-align: middle;
+			position: relative;
+			padding-top: 15px;
+			.input-lg {
+				border-radius: 0;
+			}
+			.form-control {
+				background: darken(@brand-primary, 3%);
+				border-color: darken(@brand-primary, 3%);
+				box-shadow: none;
+				color: white;
+				
+			}
+			::-webkit-input-placeholder {
+			   color: rgba(255,255,255,0.9);
+			}
 
+			:-moz-placeholder { /* Firefox 18- */
+			   color: rgba(255,255,255,0.9);  
+			}
+
+			::-moz-placeholder {  /* Firefox 19+ */
+			   color: rgba(255,255,255,0.9);  
+			}
+
+			:-ms-input-placeholder {  
+			   color: rgba(255,255,255,0.9);  
+			}
+			.login {
+				position: absolute;
+				top: 24px;
+				right: -130px;
+				height: 124px;
+				border-radius: 0;
+				width: 115px;
+				background: orange;
+				border-color: orange;
+				box-shadow: none;
+				color: white;
+				&:focus {
+					outline: none;
+					outline-offset: none;
+				}
+			}
+		}
+	}
+
+}
+.user-avatar2 {
+	width: 120px;
+	border: 2px solid white;
+	margin-bottom: 5px;
 }
