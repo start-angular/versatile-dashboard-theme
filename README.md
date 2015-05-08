@@ -1,4 +1,4 @@
-## Versatile Dashboard - Free AngularJS Dashboard Starter Theme
+## Versatile Dashboard - Free AngularJS Admin Starter Theme
 
 ## [Demo](http://rawgit.com/start-angular/versatile-dashboard-theme/master/dist/index.html)
 
