@@ -1,121 +1,172 @@
 .login-page {
 
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
 	overflow: auto;
-
+	display: table;
+	width: 100%;
+	height: 100%;
     background: @brand-primary;
 
-	text-align: center;
+	// text-align: center;
 	color: #fff;
 
 	padding: 3em;
 
 	h1 {
-		font-weight: 600;
+		font-weight: 700;
+		line-height: 36px;
+		font-size: 34px;
 		
 			span {
-				font-size: 31px;
+				font-size: 27px;
 			}
 	
 	}
 
 	.form-group {
 		padding: 8px 0;
+		margin-bottom: 0;
 	}
 
 	.form-content {
 		padding: 40px 0;
 	}
 	.user-avatar {
-		width: 230px;
+		max-width: 230px;
+		width: 100%;
 		border: 3px solid white;
 	}
-	.form-container {
-		display: table;
-		width: 100%;
-		margin-top: 18%;
-		.img-container {
-			display: table-cell;
-			vertical-align: middle;
+	.img-container, .form-content {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 15px;
+	}
+	.img-container {
+		text-align: right;
+		width: 40%;
+
+	}
+	.form-content {
+		position: relative;
+		.table-form {
+			display: table;
+			// width: 100%;
+			width: 50%;
+			.form-groups, .button-container {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.button-container {
+			}
+		}	
+		.bottom-75 {
+			margin-bottom: 75px;
 		}
-		.form-content {
-			display: table-cell;
-			vertical-align: middle;
-			position: relative;
-			padding-top: 15px;
-			.input-lg {
-				border-radius: 0;
-			}
-			.form-control {
-				background: darken(@brand-primary, 3%);
-				border-color: darken(@brand-primary, 3%);
-				box-shadow: none;
-				color: white;
-				
-			}
-			::-webkit-input-placeholder {
-			   color: rgba(255,255,255,0.9);
-			}
+		.input-lg {
+			border-radius: 0;
+		}
+		.form-control {
+			background: darken(@brand-primary, 3%);
+			border-color: darken(@brand-primary, 3%);
+			box-shadow: none;
+			color: white;
+			
+		}
+		::-webkit-input-placeholder {
+		   color: rgba(255,255,255,0.9);
+		}
 
-			:-moz-placeholder { /* Firefox 18- */
-			   color: rgba(255,255,255,0.9);  
-			}
+		:-moz-placeholder { /* Firefox 18- */
+		   color: rgba(255,255,255,0.9);  
+		}
 
-			::-moz-placeholder {  /* Firefox 19+ */
-			   color: rgba(255,255,255,0.9);  
-			}
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: rgba(255,255,255,0.9);  
+		}
 
-			:-ms-input-placeholder {  
-			   color: rgba(255,255,255,0.9);  
-			}
-			.login {
-				position: absolute;
-				top: 24px;
-				right: -130px;
-				height: 124px;
-				border-radius: 0;
-				width: 115px;
-				background: orange;
-				border-color: orange;
-				box-shadow: none;
-				color: white;
-				&:focus {
-					outline: none;
-					outline-offset: none;
-				}
+		:-ms-input-placeholder {  
+		   color: rgba(255,255,255,0.9);  
+		}
+		.login {
+			height: 110px;
+			width: 100px;
+			border-radius: 0;
+			background: orange;
+			border-color: orange;
+			box-shadow: none;
+			margin-left: 15px;
+			color: white;
+			&:focus {
+				outline: none;
+				outline-offset: none;
 			}
 		}
 	}
-
+	.remember {
+		.checkbox1 {
+			padding-right: 5px;
+		}
+		span.pass {
+			margin-left: 15px;
+		}
+	}
+	
 }
+
+
+
+
+
 .user-avatar2 {
 	width: 120px;
 	border: 2px solid white;
 	margin-bottom: 5px;
 }
 .login2 {
-				// // position: absolute;
-				// top: 24px;
-				// right: -130px;
-				height: 38px;
-				border-radius: 0;
-				width: 46px;
-				margin-right: 12px;
-				background: orange;
-				border-color: orange;
-				box-shadow: none;
-				color: white;
-				&:focus {
-					outline: none;
-					outline-offset: none;
-				}
-				&:hover {
-					color: orange;
-					background: white;
-					border-color: white;
-				}
-			}
+		// // position: absolute;
+		// top: 24px;
+		// right: -130px;
+		height: 38px;
+		border-radius: 0;
+		width: 46px;
+		margin-right: 12px;
+		background: orange;
+		border-color: orange;
+		box-shadow: none;
+		color: white;
+		&:focus {
+			outline: none;
+			outline-offset: none;
+		}
+		&:hover {
+			color: orange;
+			background: white;
+			border-color: white;
+		}
+	}
+
+@media (max-width: 768px) {
+	
+	.login-page, .img-content, .form-content {
+		display: block !important;
+	}
+	.img-content, .form-container {
+		// text-align: center !important;
+	}
+	.img-container {
+		.pull-right {
+			float: none !important; 
+		}
+		.img-responsive {
+			display: initial;
+		}
+	}
+	.form-content {
+		text-align: -webkit-center;
+		.table-form {
+			width: 100% !important;
+		}
+		.form-groups {
+			width: 80% !important;
+		}
+	}
+}
