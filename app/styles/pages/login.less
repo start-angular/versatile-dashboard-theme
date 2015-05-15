@@ -67,7 +67,6 @@
 		position: relative;
 		.table-form {
 			display: table;
-			width: 55%;
 			.form-groups, .button-container {
 				display: table-cell;
 				vertical-align: middle;
@@ -77,6 +76,7 @@
 		}	
 		.bottom-75 {
 			margin-bottom: 75px;
+			max-width: 396px;
 		}
 		.input-lg {
 			border-radius: 0;
@@ -90,18 +90,30 @@
 		}
 		::-webkit-input-placeholder {
 		   color: rgba(255,255,255,0.9);
+		   font-weight: 700;
+		   font-size: 16px;
+		   padding-top: 2px;
 		}
 
 		:-moz-placeholder { /* Firefox 18- */
-		   color: rgba(255,255,255,0.9);  
+		   color: rgba(255,255,255,0.9);
+		   font-weight: 700;
+		   font-size: 16px;
+		   padding-top: 2px;  
 		}
 
 		::-moz-placeholder {  /* Firefox 19+ */
-		   color: rgba(255,255,255,0.9);  
+		   color: rgba(255,255,255,0.9);
+		   font-weight: 700;
+		   font-size: 16px;
+		   padding-top: 2px;  
 		}
 
 		:-ms-input-placeholder {  
-		   color: rgba(255,255,255,0.9);  
+		   color: rgba(255,255,255,0.9);
+		   font-weight: 700;
+		   font-size: 16px;
+		   padding-top: 2px;  
 		}
 		.login {
 			height: 110px;
@@ -120,7 +132,6 @@
 	}
 	.remember {
 		margin-top: 8px;
-		width: 50%;
 		.checkbox1 {
 			padding-right: 5px;
 		}
@@ -164,14 +175,7 @@
 		}
 	}
 
-@media (max-width: 991px) { 
-	.table-form {
-		width: 80% !important;
-	}
-	.remember {
-		width: 50% !important;
-	}
-}
+
 
 
 @media (max-width: 768px) {
