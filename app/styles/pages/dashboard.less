@@ -72,29 +72,29 @@
      */
 
      .placeholders {
-      margin-bottom: 30px;
-      text-align: center;
-  }
-  .placeholders h4 {
-      margin-bottom: 0;
-  }
-  .placeholder {
-      margin-bottom: 20px;
-  }
-  .placeholder img {
-      display: inline-block;
-      border-radius: 50%;
-  }
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .placeholders h4 {
+        margin-bottom: 0;
+    }
+    .placeholder {
+        margin-bottom: 20px;
+    }
+    .placeholder img {
+        display: inline-block;
+        border-radius: 50%;
+    }
 
 
-  .bg-fade {
-      font-size: 500px;
-      color: rgba(0,0,0,0.1);
-      position: absolute;
-      right: -100px;
-      top: 180px;
-      overflow: hidden;
-  }
+    .bg-fade {
+        font-size: 500px;
+        color: rgba(0,0,0,0.1);
+        position: absolute;
+        right: -100px;
+        top: 180px;
+        overflow: hidden;
+    }
 
   .jumbotron {
       background: @brand-primary;
@@ -111,11 +111,13 @@
   background: none;
   &:hover, &:focus {
     border-color: white;
-    color: @brand-primary;
+    color: #797979;
     background: white;
 }
 }
-
+.snap-content, snap-content {
+    overflow-x: hidden;
+}
 snap-content {
     background: @brand-primary;
     a {
@@ -151,6 +153,9 @@ snap-drawer {
         list-style-type: none;
         padding-left: 0px;
         margin-top: 20px;
+        li.active {
+             background: @brand-primary;
+        }
         li {
             height: 40px;
             padding: 10px;
@@ -175,4 +180,10 @@ snap-drawer {
 }
 .bg-dark {
     background:#34495e;
+}
+
+* {
+    a:hover {
+        cursor: pointer;
+    }
 }

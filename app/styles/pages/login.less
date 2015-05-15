@@ -13,7 +13,7 @@
 
 	h1 {
 		font-weight: 700;
-		line-height: 36px;
+		line-height: 32px;
 		font-size: 34px;
 		
 			span {
@@ -23,6 +23,9 @@
 			color: #FFFFFF;
 			opacity: 0.7;
 			padding-right: 5px;
+			font-size: 16px;
+		  	display: block;
+		 	margin-top: 8px;
 		}
 	}
 
@@ -47,7 +50,18 @@
 	.img-container {
 		text-align: right;
 		width: 40%;
-
+		.pro-link {
+			a {
+				color: white;
+				position: absolute;
+				right: 25px;
+				top: 25px;
+				font-weight: 600;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
 	}
 	.form-content {
 		position: relative;
@@ -106,7 +120,7 @@
 	}
 	.remember {
 		margin-top: 8px;
-		width: 39%;
+		width: 50%;
 		.checkbox1 {
 			padding-right: 5px;
 		}
@@ -175,6 +189,7 @@
 		.img-responsive {
 			display: initial;
 		}
+
 	}
 	.form-content {
 		// text-align: -webkit-center;
@@ -187,5 +202,8 @@
 		.remember {			
 			width: 100% !important;
 		}
+	}
+	.pro-link {
+		display: none !important;
 	}
 }
