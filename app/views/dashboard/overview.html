@@ -1,20 +1,38 @@
 <div>
-	<div class="pull-right">
-		<a ui-sref="reports" class="pull-right btn btn-primary btn-white">Reports</a>
-		&nbsp;
-		<a ui-sref="login" class="pull-right btn btn-primary login2"><i class="fa fa-chevron-left fa-2x"></i></a>
-	</div>
-	<div class="fr">
-	<h2>Overview <small>Why is Versatile Theme so awesome?</small></h2>
-	</div>
-	<div class="jumbotron">
-		<div class="container">
-			<h1>Welcome!</h1>
-			I don't want to bloat this Versatile Theme Free Edition AngularJS Admin theme with a lot of plugins. To install plugins we have bower. Let's keep it real clean!<br /><br />
-			<p>
-				<a ui-sref="login" class="btn btn-primary btn-lg btn-white">Logout</a>
-			</p>
-			
+	<snap-drawer>
+		<div class="snap-menu">
+			<div class="sidebar-header text-center">
+				<img src="images/flat-avatar.png" alt="" class="sidebar-img">
+			</div>
+			<ul class="snap-ul">
+				<li><a ui-sref="overview">HOME</a></li>
+				<li><a ui-sref="reports">REPORTS</a></li>
+			</ul>
 		</div>
-	</div>
+	</snap-drawer>
+	<snap-dragger></snap-dragger>
+	<snap-content snap-opt-tap-to-close="false">
+
+		<a href="" snap-toggle="left" ng-click="menuOpen = !menuOpen">
+			<span class="menutoggle">
+				<i ng-hide="menuOpen" class="fa fa-bars fa-2x" ></i>
+				<i ng-show="menuOpen" class="fa fa-times fa-2x" ></i>
+			</span>
+		</a>
+		
+		<div class="fr">
+			<!-- <a ui-sref="login" class="pull-right btn btn-primary login2"><i class="fa fa-chevron-left fa-2x"></i></a> -->
+		<h2>Overview <small>Why is Versatile Theme so awesome?</small></h2>
+		</div>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Welcome!</h1>
+				I don't want to bloat this Versatile Theme Free Edition AngularJS Admin theme with a lot of plugins. To install plugins we have bower. Let's keep it real clean!<br /><br />
+				<p>
+					<a ui-sref="login" class="btn btn-primary btn-lg btn-white">Logout</a>
+				</p>
+				
+			</div>
+		</div>
+	</snap-content>	
 </div>

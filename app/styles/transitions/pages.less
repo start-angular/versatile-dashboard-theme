@@ -16,90 +16,33 @@ to prevent collapsing during animation*/
   position: relative;
 }
 
-// [ui-view].ng-enter, [ui-view].ng-leave {
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-//   -webkit-transition:all .5s ease-in-out;
-//     -moz-transition:all .5s ease-in-out;
-//     -o-transition:all .5s ease-in-out;
-//     transition:all .5s ease-in-out;
-// }
 
-[ui-view].ng-enter {
- -webkit-transform: rotateX(-180deg);
-  -moz-transform: rotateX(-180deg);
-  -ms-transform: rotateX(-180deg);
-  -o-transform: rotateX(-180deg);
-  transform: rotateX(-180deg);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition-property: -webkit-transform;
-  -moz-transition-property: -moz-transform;
-  -o-transition-property: -o-transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transform-origin: center center;
-  -moz-transform-origin: center center;
-  -ms-transform-origin: center center;
-  -o-transform-origin: center center;
-  transform-origin: center center;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 10;
+
+[ui-view].ng-leave        {
+    -webkit-animation: scaleDown .7s ease both;
+    animation: scaleDown .7s ease both;
+}
+[ui-view].ng-enter    {  
+  -webkit-animation: moveFromBottom .9s ease both;
+  animation: moveFromBottom .9s ease both;
 }
 
-[ui-view].ng-enter-active {
- -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  -o-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-  z-index: 20;
+
+
+@-webkit-keyframes scaleDown {
+  from { }
+  to { opacity: 0; -webkit-transform: scale(.8); }
+}
+@keyframes scaleDown {
+  from { }
+  to { opacity: 0; -webkit-transform: scale(.8); transform: scale(.8); }
 }
 
-[ui-view].ng-leave {
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  -o-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition-property: -webkit-transform;
-  -moz-transition-property: -moz-transform;
-  -o-transition-property: -o-transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transform-origin: center center;
-  -moz-transform-origin: center center;
-  -ms-transform-origin: center center;
-  -o-transform-origin: center center;
-  transform-origin: center center;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 20;
+@-webkit-keyframes moveFromLeft {
+  from { }
+  to { -webkit-transform: translateX(-100%); }
 }
-
-[ui-view].ng-leave-active {
-   -webkit-transform: rotateX(180deg);
-  -moz-transform: rotateX(180deg);
-  -ms-transform: rotateX(180deg);
-  -o-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-  z-index: 10;
+@keyframes moveFromLeft {
+  from { }
+  to { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
 }

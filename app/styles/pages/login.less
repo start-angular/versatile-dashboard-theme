@@ -19,7 +19,11 @@
 			span {
 				font-size: 27px;
 			}
-	
+		small {
+			color: #FFFFFF;
+			opacity: 0.7;
+			padding-right: 5px;
+		}
 	}
 
 	.form-group {
@@ -49,8 +53,7 @@
 		position: relative;
 		.table-form {
 			display: table;
-			// width: 100%;
-			width: 50%;
+			width: 55%;
 			.form-groups, .button-container {
 				display: table-cell;
 				vertical-align: middle;
@@ -102,11 +105,14 @@
 		}
 	}
 	.remember {
+		margin-top: 8px;
+		width: 39%;
 		.checkbox1 {
 			padding-right: 5px;
 		}
 		span.pass {
-			margin-left: 15px;
+			float: right;
+			padding-top: 2px;
 		}
 	}
 	
@@ -144,6 +150,16 @@
 		}
 	}
 
+@media (max-width: 991px) { 
+	.table-form {
+		width: 80% !important;
+	}
+	.remember {
+		width: 50% !important;
+	}
+}
+
+
 @media (max-width: 768px) {
 	
 	.login-page, .img-content, .form-content {
@@ -161,12 +177,15 @@
 		}
 	}
 	.form-content {
-		text-align: -webkit-center;
+		// text-align: -webkit-center;
 		.table-form {
 			width: 100% !important;
 		}
 		.form-groups {
 			width: 80% !important;
+		}
+		.remember {			
+			width: 100% !important;
 		}
 	}
 }

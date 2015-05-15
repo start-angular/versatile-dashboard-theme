@@ -10,7 +10,8 @@
     "ui-router": "~0.2.13",
     "bootstrap-btn-outline-rounded": "~0.0.3",
     "angular-animate": "~1.3.15",
-    "fontawesome": "~4.3.0"
+    "fontawesome": "~4.3.0",
+    "angular-snap": "~1.8.1"
   },
   "devDependencies": {
     "angular-mocks": "~1.3.0"

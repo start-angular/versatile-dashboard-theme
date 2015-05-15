@@ -11,6 +11,7 @@
  angular
  .module('yapp', [
     'ui.router',
+    'snap',
     'ngAnimate'
     ])
  .config(function($stateProvider, $urlRouterProvider) {
