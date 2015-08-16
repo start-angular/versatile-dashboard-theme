@@ -1,8 +1,7 @@
 <div>
 	<div ng-include="'menu.html'"></div>
 	<snap-dragger></snap-dragger>
-	<snap-content snap-opt-tap-to-close="false">
-
+	<snap-content snap-opt-tap-to-close="false" class="bg-dark">
 		<a href="" snap-toggle="left" ng-click="menuOpen = !menuOpen">
 			<span class="menutoggle">
 				<i ng-hide="menuOpen" class="fa fa-bars fa-2x" ></i>
@@ -11,18 +10,16 @@
 		</a>
 		
 		<div class="fr">
-		<h2>Overview <small>Why is Versatile Theme so awesome?</small></h2>
+		<h2>Contact <small>me!</small></h2>
 		</div>
+		<span class="glyphicon glyphicon-dashboard bg-fade"></span>
 		<div class="jumbotron">
 			<div class="container">
-				<h1>Welcome!</h1>
-				I don't want to bloat this Versatile Theme Free Edition AngularJS Admin theme with a lot of plugins. To install plugins we have bower. Let's keep it real clean!<br /><br />
-<!--				
-                <p>
-					<a ui-sref="login" class="btn btn-primary btn-lg btn-white">Logout</a>
+				<h1>Write me a mail</h1>
+				<p>or something else</p>
+				<p>
+					<a class="btn btn-primary btn-lg btn-white" ui-sref="overview">Back to Overview</a>
 				</p>
--->
-				
 			</div>
 		</div>
 	</snap-content>	
