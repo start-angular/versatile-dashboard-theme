@@ -5,7 +5,7 @@
         </div> 
 
         <ul class=snap-ul>
-            <li ng-repeat="item in menuItems" ng-class="{active: $state.includes({{item.name}})}">
+            <li ng-repeat="item in menuItems" ng-class="{active: $state.includes('{{item.name}}') }">
                 <a ui-sref={{item.name}}>{{item.text}}</a>
             </li>
         </ul>

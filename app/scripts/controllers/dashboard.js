@@ -8,13 +8,13 @@
  * Controller of yapp
  */
 angular.module('yapp')
-  .controller('DashboardCtrl', function($scope, $state, states) {
+  .controller('DashboardCtrl', function($scope, $state) {
     $scope.$state = $state;
 
     $scope.menuItems = [];
-    angular.forEach(states, function (item) {
-        if (item.state.visible) {
-            $scope.menuItems.push({name: item.name, text: item.text});
+    angular.forEach($state.get(), function (item) {
+        if (item.data && item.data.visible) {
+            $scope.menuItems.push({name: item.name, text: item.data.text});
         }
     });
   });
