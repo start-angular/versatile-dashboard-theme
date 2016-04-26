@@ -1,17 +1,5 @@
 <div>
-	<snap-drawer>
-		<div class="snap-menu">
-			<div class="sidebar-header text-center">
-				<img src="images/flat-avatar.png" alt="" class="sidebar-img img-circle">
-			</div>
-			<ul class="snap-ul">
-				<li ng-class="{active: $state.includes('overview')}"><a ui-sref="overview">HOME</a></li>
-				<li ng-class="{active: $state.includes('reports')}"><a ui-sref="reports">REPORTS</a></li>
-				<li><a ui-sref="login">LOGOUT</a></li>
-				<li><a href="http://strapui.com">MORE PREMIUM THEMES</a></li>
-			</ul>
-		</div>
-	</snap-drawer>
+	<div ng-include="'menu.html'"></div>
 	<snap-dragger></snap-dragger>
 	<snap-content snap-opt-tap-to-close="false">
 
