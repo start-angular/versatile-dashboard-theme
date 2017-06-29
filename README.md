@@ -1,5 +1,7 @@
 ## Versatile Dashboard - Free AngularJS Admin Starter Theme
 
+### Note: This project is no longer maintained.
+
 ## [Demo](http://rawgit.com/start-angular/versatile-dashboard-theme/master/dist/index.html)
 
 Versatile Admin Theme is a Boilerplate for Animated AngularJS Starter Theme written with Bootstrap LESS. Powered by Gulp.
