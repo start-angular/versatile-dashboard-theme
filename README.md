@@ -1,4 +1,6 @@
-## Versatile Dashboard - Free AngularJS Admin Starter Theme
+## NOTICE: This repo has been deprecated
+
+## [DEPRECATED] Versatile Dashboard - Free AngularJS Admin Starter Theme
 
 ### Note: This project is no longer maintained.
 
